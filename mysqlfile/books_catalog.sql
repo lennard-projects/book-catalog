@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2025 at 11:40 AM
+-- Generation Time: Feb 27, 2025 at 08:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `full_stack_exam`
+-- Database: `books_catalog`
 --
 
 -- --------------------------------------------------------
@@ -38,16 +38,6 @@ CREATE TABLE `books` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `books`
---
-
-INSERT INTO `books` (`id`, `title`, `isbn`, `author`, `publisher`, `year_published`, `category`) VALUES
-(20, 'New book33', 'lorem ipsum', 'lorem ipsum', 'lorem ipsum', 1999, 'lorem ipsum'),
-(21, 'New book 2', 'lorem ipsum 2', 'lorem ipsum 2', 'lorem ipsum 2', 2000, 'lorem ipsum 2'),
-(24, 'New book 4', 'lorem ipsum', 'lorem ipsum', 'lorem ipsum', 2005, 'lorem ipsum'),
-(25, 'New Book 5', 'lorem ipsum', 'lorem ipsum', 'lorem ipsum', 2023, 'lorem ipsum');
-
---
 -- Indexes for dumped tables
 --
 
@@ -65,7 +55,7 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

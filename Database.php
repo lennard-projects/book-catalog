@@ -4,7 +4,7 @@ class Database
     private $host = 'localhost';
     private $username = 'root';
     private $password = '';
-    private $dbname = 'full_stack_exam';
+    private $dbname = 'books_catalog';
     private $conn;
     public function __construct()
     {
