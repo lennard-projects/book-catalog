@@ -56,10 +56,12 @@ include_once('modalEdit.php');
             },
             success: function(response) {
                 var books = JSON.parse(response);
+                // console.log(books);
+                
                 var tableBody = $('#booksTable tbody');
                 tableBody.empty();
 
-                books.forEach(function(book) {
+                books.forEach((book) => {
                     tableBody.append(
                         '<tr>' +
                         '<td>' + book.title + '</td>' +

@@ -49,7 +49,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'update_book') {
     if ($book->update()) {
         echo "Book updated successfully!";
     } else {
-        echo "Failed to update user.";
+        echo "Failed to update book.";
     }
 }
 
@@ -58,7 +58,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'delete_book') {
     if ($book->delete()) {
         echo "Deleted successfully!";
     } else {
-        echo "Failed to delete user.";
+        echo "Failed to delete book.";
     }
 }
 ?>
